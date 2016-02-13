@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+  
+   <definition name="adminRoleView" template="/WEB-INF/views/view.jsp">
+    <put-attribute name="title" value="" />
+    <put-attribute name="header" value="/WEB-INF/views/header.jsp" />
+    <put-attribute name="menu" value="/WEB-INF/views/admin/leftMenu.jsp" />
+    <put-attribute name="body" value="/WEB-INF/views/admin/admin.jsp" />
+    <put-attribute name="footer" value="/WEB-INF/views/footer.jsp" />
+  </definition>
+ 
+  <definition name="userListView" template="/WEB-INF/views/view.jsp">
+    <put-attribute name="title" value="" />
+    <put-attribute name="header" value="/WEB-INF/views/header.jsp" />
+    <put-attribute name="menu" value="/WEB-INF/views/admin/leftMenu.jsp" />
+    <put-attribute name="body" value="/WEB-INF/views/admin/userList.jsp" />
+    <put-attribute name="footer" value="/WEB-INF/views/footer.jsp" />
+  </definition>
+  <definition name="categoryListView" template="/WEB-INF/views/view.jsp">
+    <put-attribute name="title" value="" />
+    <put-attribute name="header" value="/WEB-INF/views/header.jsp" />
+    <put-attribute name="menu" value="/WEB-INF/views/admin/leftMenu.jsp" />
+    <put-attribute name="body" value="/WEB-INF/views/admin/categoryList.jsp" />
+    <put-attribute name="footer" value="/WEB-INF/views/footer.jsp" />
+  </definition>
+  <definition name="categoryAdminView" template="/WEB-INF/views/view.jsp">
+    <put-attribute name="title" value="" />
+    <put-attribute name="header" value="/WEB-INF/views/header.jsp" />
+    <put-attribute name="menu" value="/WEB-INF/views/admin/leftMenu.jsp" />
+    <put-attribute name="body" value="/WEB-INF/views/admin/category.jsp" />
+    <put-attribute name="footer" value="/WEB-INF/views/footer.jsp" />
+  </definition> 
+  <definition name="productListView" template="/WEB-INF/views/view.jsp">
+    <put-attribute name="title" value="" />
+    <put-attribute name="header" value="/WEB-INF/views/header.jsp" />
+    <put-attribute name="menu" value="/WEB-INF/views/admin/leftMenu.jsp" />
+    <put-attribute name="body" value="/WEB-INF/views/admin/productsByCat.jsp" />
+    <put-attribute name="footer" value="/WEB-INF/views/footer.jsp" />
+  </definition>
+  <definition name="productAdminView" template="/WEB-INF/views/view.jsp">
+    <put-attribute name="title" value="" />
+    <put-attribute name="header" value="/WEB-INF/views/header.jsp" />
+    <put-attribute name="menu" value="/WEB-INF/views/admin/leftMenu.jsp" />
+    <put-attribute name="body" value="/WEB-INF/views/admin/product.jsp" />
+    <put-attribute name="footer" value="/WEB-INF/views/footer.jsp" />
+  </definition>
+  
+   <definition name="cartAdminView" template="/WEB-INF/views/view.jsp">
+    <put-attribute name="title" value="" />
+    <put-attribute name="header" value="/WEB-INF/views/header.jsp" />
+    <put-attribute name="menu" value="/WEB-INF/views/admin/leftMenu.jsp" />
+    <put-attribute name="body" value="/WEB-INF/views/admin/cart.jsp" />
+    <put-attribute name="footer" value="/WEB-INF/views/footer.jsp" />
+  </definition> 
+  
+ 
+</tiles-definitions>

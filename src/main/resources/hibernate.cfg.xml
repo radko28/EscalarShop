@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC           
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+ "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<property name="dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+		<property name="connection.driver_class">org.postgresql.Driver</property>
+		<property name="connection.url">jdbc:postgresql://localhost:5432/TrangoWorldBoulder</property>
+		<property name="connection.username">postgres</property>
+		<!-- password Siemens -->
+		<!-- <property name="connection.password">agatha</property> -->
+		<!-- password Dell -->
+		<property name="connection.password">password</property>
+		<property name="connection.autocommit">false</property>
+		<property name="cache.provider_class">org.hibernate.cache.HashtableCacheProvider</property>
+		<property name="transaction.factory_class">org.hibernate.transaction.JDBCTransactionFactory</property>
+		<property name="current_session_context_class">thread</property>
+		<property name="hibernate.show_sql">true</property>
+		<property name="hbm2ddl.auto" >update</property>
+		<!-- <property name="hbm2ddl.auto" >create</property> -->
+		
+		
+		<mapping class="sk.cyklosoft.eshop.domain.Product" />
+		<mapping class="sk.cyklosoft.eshop.domain.ProductCategory" />
+     	<mapping class="sk.cyklosoft.eshop.domain.User" />
+		<mapping class="sk.cyklosoft.eshop.domain.Authority" />
+		<mapping class="sk.cyklosoft.eshop.domain.Cart" />
+		<mapping class="sk.cyklosoft.eshop.domain.Order" />
+		<mapping class="sk.cyklosoft.eshop.domain.SummaryOrder" />
+		<mapping class="sk.cyklosoft.eshop.domain.Color" />
+		<mapping class="sk.cyklosoft.eshop.domain.Size" />
+		<mapping class="sk.cyklosoft.eshop.domain.Messages" />
+		<mapping class="sk.cyklosoft.eshop.domain.Factura" />
+		<mapping class="sk.cyklosoft.eshop.domain.Photo" />
+		<mapping class="sk.cyklosoft.eshop.domain.ColorType" />
+		<mapping class="sk.cyklosoft.eshop.domain.Size" />		
+		<mapping class="sk.cyklosoft.eshop.domain.SizeType" />
+		<!-- mapping class="sk.cyklosoft.eshop.domain.UserInfo" /-->
+	</session-factory>
+</hibernate-configuration>  
