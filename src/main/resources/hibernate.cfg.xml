@@ -9,7 +9,7 @@
 		<property name="connection.url">jdbc:postgresql://localhost:5432/TrangoWorldBoulder</property>
 		<property name="connection.username">postgres</property>
 		<!-- password Siemens -->
-		<!-- <property name="connection.password">agatha</property> -->
+		<!-- <property name="connection.password"></property> -->
 		<!-- password Dell -->
 		<property name="connection.password">password</property>
 		<property name="connection.autocommit">false</property>
